@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>event listners</title>
+  </head>
+  <style>
+    #btn {
+      color: #fff;
+      background: lightskyblue;
+      padding: 5px 10px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    #btn:hover {
+      background: royalblue;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>The Leasson</h1>
+      <p id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+        ratione esse nulla mollitia consequuntur quas blanditiis dolorum.
+        Perferendis illo magni ducimus rerum voluptas, velit est commodi
+        molestias omnis ad repudiandae maxime nisi alias, suscipit voluptate?
+        Maiores debitis fugiat, delectus dolor quod nesciunt hic maxime harum
+        voluptatum animi soluta modi, corrupti consequatur veniam. Eum totam
+        necessitatibus ea temporibus harum, aliquam tempore vitae nam esse
+        molestias, minus quidem. Amet, incidunt laborum! Quaerat, maxime,
+        distinctio cum dolore impedit nulla odit inventore blanditiis
+        repudiandae totam recusandae voluptas accusantium, nam cupiditate libero
+        animi itaque. Ex id nihil fuga recusandae voluptates dolorum cumque qui
+        debitis cupiditate, eum, necessitatibus ab, odit ullam veniam beatae
+        porro maxime suscipit! Facilis nesciunt rerum aperiam officia eius.
+        Alias fugit perferendis consequuntur aliquam suscipit eos aliquid
+        dolores vero eligendi, ab culpa quasi! Soluta vero consequuntur et
+        officia fuga, perspiciatis, vel nobis repudiandae iste libero, atque ea
+        mollitia nesciunt incidunt autem laboriosam beatae iusto at consequatur.
+        Reiciendis, tenetur! Assumenda labore quis, deserunt fugit a tempore
+        ullam ab vero, ipsum inventore, maiores dolores aspernatur earum officia
+        sapiente rerum? Blanditiis esse debitis incidunt tempore corrupti hic
+        autem quas ad fuga dolorem suscipit cupiditate iure minima rerum
+        voluptatem unde corporis, sapiente repellat et laborum eligendi maiores!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
+        voluptates facilis facere aspernatur dolor! Amet assumenda dolorem
+        molestias ea animi!
+      </p>
+      <button id="btn">Show/Hide</button>
+    </div>
+    <script>
+      let btn = document.getElementById("btn");
+      btn.addEventListener("click", (run) => {
+        let para = document.getElementById("para");
+        if (para.style.display != "none") {
+          para.style.display = "none";
+        } else {
+          para.style.display = "block";
+        }
+      });
+      //   function togglehide() {
+      //     let btn = document.getElementById("btn");
+      //   }
+    </script>
+  </body>
+</html>

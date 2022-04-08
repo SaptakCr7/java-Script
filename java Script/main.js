@@ -1,31 +1,26 @@
-const myForm = document.querySelector("#my-form");
-const nameInput = document.querySelector("#name");
-const emailInput = document.querySelector("#email");
-const msg = document.querySelector(".msg");
-const userList = document.querySelector("#users");
+// catName("Tiger");
 
-myForm.addEventListener("submit", onSubmit);
+// console.log(num); // Returns 'undefined' from hoisted var declaration (not 6)
+// var num = 6; // Declaration// // Initialization
+// console.log(num); // Returns 6 after the line with initialization is executed.
 
-function onSubmit(e) {
-  e.preventDefault();
+// // console.log(numb); // Throws ReferenceError exception as the variable value is uninitialized
+// // let numb = 6; // Initialization
 
-  if (nameInput.value === "" || emailInput.value === "") {
-    showMessage("Please enter all fields");
-  } else {
-    const li = document.createElement("li");
-    li.appendChild(
-      document.createTextNode(`${nameInput.value}, ${emailInput.value}`)
-    );
+// console.log(catName);
 
-    userList.appendChild(li);
+// function catName(name) {
+//   console.log("My cat's name is " + name);
+// }
 
-    nameInput.value = "";
-    emailInput.value = "";
-  }
-}
+// var x;
 
-function showMessage(message) {
-  msg.classList.add("error");
-  msg.innerHTML = message;
-  setInterval(() => message, 2000);
-}
+// console.log(x);
+
+// var n = 2;
+// function square(num) {
+//   var ans = num * num;
+//   return ans;
+// }
+// var square2 = square(n);
+// var square4 = square(4);

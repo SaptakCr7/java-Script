@@ -128,3 +128,40 @@ document.querySelector(".items").style.background = "#ccc";
 
 console.log("click");
 });
+
+<!-- 31/03/2022 -->
+
+setTimeout--> Allows us to run the function once after the interval of time
+
+clearTionout--> Allows us to run the function repeatedly after the interval of time
+
+Browser events:
+
+    click
+    contextmenu
+    mouseover/mouseout
+    mousedown/mouseup
+
+    submit
+    focus
+
+Higher Order function & Arrays:
+
+    1.for loop
+     for(let i=0; i<array.length;i++){}
+
+    2.forEach loop
+     arrays.forEach(functon(name){
+         console.log(name);
+     })
+
+.PUSH()-->The push() method adds one or more elements to the end of an array and returns the new length of the array.
+
+.filter-->The filter() method creates a new array with all elements that pass the test implemented by the provided function.
+
+    Syntax--> const filterItems=items=array.filter((item)=>{
+
+        return item.price <=100
+    })
+
+.map --> map() array method में हर एक array element पर function को call करके उसका नया array return किया जाता है |
